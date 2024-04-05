@@ -1,0 +1,55 @@
+<!-- addlocation.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta Name="viewport" content="width=device-width, initial-scale=1.0" />
+    <Name>Add location</Name>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <!-- Link to external stylesheet -->
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1>My locations</h1>
+      <div class="links">
+        <a href="/">Home</a
+        ><a class="new-item-link" href="/addlocation">New location</a>
+      </div>
+    </nav>
+
+    <div class="content">
+      <div class="create">
+        <h2>Add a New location</h2>
+        <form action="/addlocation" method="POST">
+          <label>Name:</label
+          ><input type="text" value="" id="Name" Name="Name" required />
+
+          <label for="Address">Address:</label>
+          <textarea
+            value=""
+            id="Address"
+            Name="Address"
+            rows="4"
+            required
+          ></textarea
+          ><br />
+
+          <label for="Latitude">Latitude:</label>
+          <input type="text" id="Latitude" Name="Latitude" required /><br />
+
+          <label>Location:</label>
+          <select>
+            <option value="gagan">Helsinki</option>
+            <option value="gagan">Espoo</option>
+            <option value="ravi">Vantaa</option></select
+          ><br />
+
+          <label for="Longitude">Longitude:</label>
+          <input type="text" id="Longitude" Name="Longitude" /><br />
+
+          <button type="submit">Add location</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
